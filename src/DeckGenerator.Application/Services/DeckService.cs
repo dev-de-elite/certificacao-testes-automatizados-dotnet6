@@ -1,13 +1,13 @@
 using AutoMapper;
 using DeckGenerator.Domain.Entities;
-using DeckGenerator.Domain.Interfaces.Repositories;
-using DeckGenerator.Domain.Interfaces.Services;
+using DeckGenerator.Application.Interfaces.Repositories;
+using DeckGenerator.Application.Interfaces.Services;
 using DeckGenerator.Domain.Models;
 using Microsoft.Extensions.Logging;
 
 namespace DeckGenerator.Application.Services;
 
-public class DeckService : IDeckService
+internal class DeckService : IDeckService
 {
     private readonly IMapper _mapper;
     private readonly IDeckRepository _repository;
