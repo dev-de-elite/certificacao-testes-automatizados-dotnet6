@@ -1,4 +1,4 @@
-using DeckGenerator.Domain.Interfaces.Repositories;
+using DeckGenerator.Application.Interfaces.Repositories;
 using DeckGenerator.Infastructure.Context;
 using DeckGenerator.Infastructure.Repositories;
 using Microsoft.EntityFrameworkCore;

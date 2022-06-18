@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using DeckGenerator.Domain.Entities;
-using DeckGenerator.Domain.Interfaces.Repositories;
+using DeckGenerator.Application.Interfaces.Repositories;
 using DeckGenerator.Infastructure.Context;
 using Microsoft.EntityFrameworkCore;
 

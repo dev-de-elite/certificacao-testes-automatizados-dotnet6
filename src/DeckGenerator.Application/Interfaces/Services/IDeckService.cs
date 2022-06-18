@@ -1,6 +1,6 @@
 using DeckGenerator.Domain.Models;
 
-namespace DeckGenerator.Domain.Interfaces.Services;
+namespace DeckGenerator.Application.Interfaces.Services;
 
 public interface IDeckService
 {

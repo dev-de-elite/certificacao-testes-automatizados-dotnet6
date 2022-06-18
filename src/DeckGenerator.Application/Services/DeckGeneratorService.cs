@@ -1,10 +1,10 @@
-using DeckGenerator.Domain.Interfaces.Services;
+using DeckGenerator.Application.Interfaces.Services;
 using DeckGenerator.Domain.Models;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace DeckGenerator.Application.Services;
 
-public class DeckGeneratorService : IDeckGeneratorService
+internal class DeckGeneratorService : IDeckGeneratorService
 {
     private readonly IMemoryCache _cache;
 

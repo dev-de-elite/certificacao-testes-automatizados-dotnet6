@@ -11,5 +11,6 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\DeckGenerator.Domain\DeckGenerator.Domain.csproj"/>
+    	<ProjectReference Include="..\DeckGenerator.Application\DeckGenerator.Application.csproj" />
 	</ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 using DeckGenerator.Application.Extensions;
-using DeckGenerator.Domain.Interfaces.Services;
+using DeckGenerator.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeckGenerator.Api.Controllers;

@@ -1,6 +1,6 @@
 using DeckGenerator.Application.Automapper;
 using DeckGenerator.Application.Services;
-using DeckGenerator.Domain.Interfaces.Services;
+using DeckGenerator.Application.Interfaces.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DeckGenerator.Application.DependecyInjection;
