@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace DeckGenerator.Application.Services;
 
-internal class DeckService : IDeckService
+public class DeckService : IDeckService
 {
     private readonly IMapper _mapper;
     private readonly IDeckRepository _repository;
@@ -50,7 +50,8 @@ internal class DeckService : IDeckService
         {
             var entity = await _repository.GetByGuidAsync(guid);
 
-            if (entity is null) return default;
+            if (entity is null)
+                return default;
 
             return _mapper.Map<DeckDto>(entity);
         }

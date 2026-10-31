@@ -4,7 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace DeckGenerator.Application.Services;
 
-internal class DeckGeneratorService : IDeckGeneratorService
+public class DeckGeneratorService : IDeckGeneratorService
 {
     private readonly IMemoryCache _cache;
 
@@ -40,12 +40,6 @@ internal class DeckGeneratorService : IDeckGeneratorService
         return result;
     }
 
-    public DeckDto CreateCustomDeck(string[] cards)
-    {
-        var deck = new DeckDto { Guid = Guid.NewGuid(), Cards = new Stack<string>(cards) };
-        return deck;
-    }
-
     public DeckDto CreateCustomDeckSuffled(string[] cards)
     {
         var deck = CreateCustomDeck(cards);
@@ -53,7 +47,11 @@ internal class DeckGeneratorService : IDeckGeneratorService
         return deck;
     }
 
-    public DeckDto CreateDefaultDeck() => new DeckDto { Guid = Guid.NewGuid(), Cards = new Stack<string>(GenerateCards()) };
+    public DeckDto CreateCustomDeck(string[] cards)
+    {
+        var deck = new DeckDto { Guid = Guid.NewGuid(), Cards = new Stack<string>(cards) };
+        return deck;
+    }
 
     public DeckDto CreateDefaultDeckShuffled()
     {
@@ -61,6 +59,8 @@ internal class DeckGeneratorService : IDeckGeneratorService
         SuffleDeck(deck);
         return deck;
     }
+
+    public DeckDto CreateDefaultDeck() => new() { Guid = Guid.NewGuid(), Cards = new Stack<string>(GenerateCards()) };
 
     public void SuffleDeck(DeckDto deck)
     {

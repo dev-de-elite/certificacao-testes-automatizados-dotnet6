@@ -1,25 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DC4DD511-BBE3-4861-911F-65C00AFDC331}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckGenerator.Api", "src\DeckGenerator.Api\DeckGenerator.Api.csproj", "{B0D2DE25-7ACB-4C79-8C5B-0DD0AD2AC383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeckGenerator.Api", "src\DeckGenerator.Api\DeckGenerator.Api.csproj", "{B0D2DE25-7ACB-4C79-8C5B-0DD0AD2AC383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckGenerator.Domain", "src\DeckGenerator.Domain\DeckGenerator.Domain.csproj", "{2950947A-11C1-49A1-A195-9BE84915B21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeckGenerator.Domain", "src\DeckGenerator.Domain\DeckGenerator.Domain.csproj", "{2950947A-11C1-49A1-A195-9BE84915B21D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckGenerator.Infrastructure", "src\DeckGenerator.Infrastructure\DeckGenerator.Infrastructure.csproj", "{FCAD9DCA-5962-41FE-AFCA-BA8E51A0744B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeckGenerator.Infrastructure", "src\DeckGenerator.Infrastructure\DeckGenerator.Infrastructure.csproj", "{FCAD9DCA-5962-41FE-AFCA-BA8E51A0744B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckGenerator.Application", "src\DeckGenerator.Application\DeckGenerator.Application.csproj", "{6B506A99-CC22-438B-ADD2-A1DEB48A2ECE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeckGenerator.Application", "src\DeckGenerator.Application\DeckGenerator.Application.csproj", "{6B506A99-CC22-438B-ADD2-A1DEB48A2ECE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C1383C5E-36E3-4779-B18D-B38BE5BD4BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckGenerator.Application.Tests", "tests\DeckGenerator.Application.Tests\DeckGenerator.Application.Tests.csproj", "{ED5CB28C-5F28-42E2-B5FC-C2A4C2C5E754}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B0D2DE25-7ACB-4C79-8C5B-0DD0AD2AC383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,11 +39,22 @@ Global
 		{6B506A99-CC22-438B-ADD2-A1DEB48A2ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B506A99-CC22-438B-ADD2-A1DEB48A2ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B506A99-CC22-438B-ADD2-A1DEB48A2ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5CB28C-5F28-42E2-B5FC-C2A4C2C5E754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5CB28C-5F28-42E2-B5FC-C2A4C2C5E754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5CB28C-5F28-42E2-B5FC-C2A4C2C5E754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5CB28C-5F28-42E2-B5FC-C2A4C2C5E754}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B0D2DE25-7ACB-4C79-8C5B-0DD0AD2AC383} = {DC4DD511-BBE3-4861-911F-65C00AFDC331}
 		{2950947A-11C1-49A1-A195-9BE84915B21D} = {DC4DD511-BBE3-4861-911F-65C00AFDC331}
 		{FCAD9DCA-5962-41FE-AFCA-BA8E51A0744B} = {DC4DD511-BBE3-4861-911F-65C00AFDC331}
 		{6B506A99-CC22-438B-ADD2-A1DEB48A2ECE} = {DC4DD511-BBE3-4861-911F-65C00AFDC331}
+		{ED5CB28C-5F28-42E2-B5FC-C2A4C2C5E754} = {C1383C5E-36E3-4779-B18D-B38BE5BD4BEE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A17171A2-03F1-4B53-B08F-E72006937038}
 	EndGlobalSection
 EndGlobal

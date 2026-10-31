@@ -29,15 +29,15 @@ public class DeckRepository : IDeckRepository
             .Include(x => x.Cards)
             .ToListAsync();
 
-    public async Task<Deck?> GetByIdAsync(long id) =>
-        await _context.Decks
-                .Include(x => x.Cards)
-                .FirstOrDefaultAsync(x => x.Id == id);
+    public Task<Deck?> GetByIdAsync(long id) =>
+        _context.Decks
+            .Include(x => x.Cards)
+            .FirstOrDefaultAsync(x => x.Id == id);
 
-    public async Task<Deck?> GetByGuidAsync(Guid guid) =>
-        await _context.Decks
-                .Include(x => x.Cards)
-                .FirstOrDefaultAsync(x => x.Guid == guid);
+    public Task<Deck?> GetByGuidAsync(Guid guid) =>
+        _context.Decks
+            .Include(x => x.Cards)
+            .FirstOrDefaultAsync(x => x.Guid == guid);
 
 
     public Task SaveChangesAsync() => _context.SaveChangesAsync();
